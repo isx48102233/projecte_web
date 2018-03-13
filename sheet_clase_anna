@@ -1,0 +1,31 @@
+#### INICI ####
+
+Markdown (.md) -> pandoc -> output html
+
+Jeykll: Generador de webs estatiques.
+
+1. Instal·la el paquet pandoc: 
+sudo dnf -y install pandoc texlive
+
+2. Utilitzant pandoc converteix qualsevol exemple de MarkDown a HTML, PDF, ODT, etc.
+
+pandoc -o sortida.html input.md
+pandoc -t odt -o sortida.odt input.md
+pandoc -o sortida.pdf input.md
+pandoc -latex -o sortida.pdf input.md
+
+3. Instal·la git: 
+sudo dnf -y install git gitg meld
+
+4.1. Explora el repositori de GitHub fadado/gitet. En particular, fes una còpia local tal com s’indica més avall i visita la presentació sobre MarkDown del directori slides.
+4.2. Explora el repositori de GitHub fadado/literate.
+
+/home/users/inf/hisx2/isx48102233/isx48102233/UF2-M09-ANNA
+
+mkdir github
+cd github/
+
+git clone https://github.com/fadado/gitet.git
+git clone https://github.com/fadado/literate.git
+
+/home/users/inf/hisx2/isx48102233/isx48102233/UF2-M09-ANNA/Projecte -> gitlab
