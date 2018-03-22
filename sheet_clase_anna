@@ -50,10 +50,31 @@ Aqui tinc tot amb el mateix punt de dades i entro a la web:
 
 https://isx48102233.github.io/projecte_web/
 
-JEKYLL
+4. JEKYLL
 
-sudo dnf install gcc-*
-sudo dnf install rubygems rubygems-devel ruby-devel
-sudo dnf install redhat-rpm-config
-sudo gem install jekyll --ERROR
+sudo dnf -y install rubygems rubygems-devel ruby-devel
+sudo dnf -y install redhat-rpm-config
+sudo dnf -y install gcc-*
+gem install jekyll
+gem install minima
+gem install jekyll bundler
+gem install bundle
+
+updatedb
+
+jekyll new webAdri
+cd webAdri/
+cp -r ~/.gem/ruby/gems/minima-*/* .
+sed -i 's/^theme:/#&/' _config.yml 
+jekyll serve --watch
+
+-- dona error al file:
+
+vim /var/tmp/UF2-M09-ANNA/Projecte/webAdri/_includes/head.html
+
+-- eliminem la linia 5 (surt al error)
+
+jekyll serve --watch
+
+http:localhost:4000
 
